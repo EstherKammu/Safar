@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+        <link rel="stylesheet" href="reg_now.css">
+    </head>
+    <body>
+        <div class="reg1">
+        <div class="reg2">
+        <h2>REGISTRATION FORM</h2>
+        <form id="register" action="index.html" method="POST">
+            <fieldset>
+                <legend><h3>Personal Info: </h3></legend>
+                    <label for="fname"><span style="color:red;" >*</span>First name: </label>
+                    <input type="text" id="fname" name="fname" maxlength="40" class="name" placeholder="Enter your First name" required>
+                    <br><br>
+                    <label for="lname"><span style="color:red;" >*</span>Last name: </label>
+                    <input type="text" id="lname" name="lname" maxlength="40" class="name" placeholder="Enter your Last name" required>
+                    <br><br>
+                    <label for="email"><span style="color:red;" >*</span>Email: </label>
+                    <input type="email" id="email" name="email" maxlength="45" class="name" placeholder="Enter your email address" required>
+                    <br><br>
+                    <label for="phoneno"><span style="color:red;" >*</span>Phone number: </label>
+                    <input type="tel" id="phoneno" name="phoneno" maxlength="30" class="name" placeholder="123-4567-890" required>
+                    <br><br>
+                    <label for="gender"><span style="color:red;" >*</span>Gender:</label><br>&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="Male" name="gender" value="Male">
+                    &nbsp;
+                    <span>
+                        <label for="Male">Male</label>
+                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="Female" name="gender" value="Female">&nbsp;
+                    <span>
+                        <label for="Female">Female</label>
+                    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="other" name="gender" value="other">&nbsp;
+                    <span>
+                        <label for="other">Other</label>
+                    </span><br><br><br>
+
+                    <label for="file"><span style="color:red;" >*</span>Identity proof: </label>
+                        <input type="file" name="file" id="file" value="Browse">
+
+                  
+
+            </fieldset>
+            <fieldset>
+                <legend><h3>What would you like to see more? </h3></legend>
+                <span>
+                    <label>Which side would you like to explore ?<label><br><br>
+                    <input type="checkbox" id="North " name="dir" value="North ">
+                    <label for="North ">North</label>
+                    <br>
+                    <input type="checkbox" id="South" name="dir" value="South">
+                    <label for="South">South</label>
+                    <br>
+                    <input type="checkbox" id="East" name="dir" value="East">
+                    <label for="East">East </label>
+                    <br>
+                    <input type="checkbox" id="West" name="dir" value="West">
+                    <label for="West">West</label>
+                    </span>
+                    <br><br>
+                    <label for="tplace">Types of places: </label>
+                    <select id="tplace" name="tplaces" >
+                    <option value="volvo">Historic</option>
+                    <option value="saab">Religious</option>
+                    <option value="fiat">Cultural</option>
+                    <option value="fiat">Beaches</option>
+                    <option value="audi">Amusement/Sanctuaries</option>
+                    <option value="fiat">Baazar</option>
+                    
+                    </select>
+
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h3>Feedback: </h3></legend>
+            <label for="rate us">Rate this website</label><br>
+            <input type="range" id="rate us" name="rating " min="0" max="10"><br><br>
+            <label for="feedback">Enter your feedback</label><br>
+            <textarea rows="20" cols="100" placeholder="Please give your valuable feedback"></textarea><br><br>
+            </fieldset><br><br>
+            <button id="submit">SUBMIT</button>
+        </form>
+    </div>
+    </div>
+        </body>
+        </html>    
+
